@@ -11,7 +11,6 @@ function UserTable() {
     // Implement delete functionality
     console.log('Delete button clicked');
   }
-
   
   return (
     <div className='flex flex-col items-center mt-10 ml-10 mr-10'>
@@ -31,9 +30,8 @@ function UserTable() {
               <td>{Form.firstName}</td>
               <td>{Form.lastName}</td>
               <td>{Form.email}</td>
-<td><button className='bg-blue-500 text-white px-3 py-1 rounded' onClick={() => handleEdit(user._id)}>Edit</button></td>
-  <td><button className='bg-red-500 text-white px-3 py-1 rounded' onClick={() => handleDelete(user._id)}>Delete</button></td>
-
+              <td><button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600" onClick={() => handleEdit(user._id)}>Edit</button></td>
+              <td><button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600" onClick={() => handleDelete(user._id)}>Delete</button></td>
             </tr>
             </tbody>
        </table>     
